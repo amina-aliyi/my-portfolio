@@ -105,3 +105,44 @@ function nextSlide() {
 // Auto slide change every 3 seconds (adjust as needed)
 setInterval(nextSlide, 3000);
 
+
+
+
+// animating the text on portifolio
+
+//   document.addEventListener("DOMContentLoaded", function () {
+// 		var textElement = document.getElementById("text");
+
+// 		textElement.classList.add("animated-text");
+// 	});
+
+// document.addEventListener("DOMContentLoaded", function () {
+// 	var textElement = document.getElementById("text");
+// 	var words = ["Hello", "there,", "I'm", "a", "front", "end", "developer"];
+// 	var currentIndex = 0;
+
+// 	function typeWord() {
+// 		var currentWord = words[currentIndex];
+// 		var wordElement = document.createElement("span");
+// 		wordElement.textContent = currentWord;
+// 		wordElement.classList.add("word");
+// 		textElement.appendChild(wordElement);
+
+// 		// Move to the next word or loop back to the first word
+// 		currentIndex = (currentIndex + 1) % words.length;
+// 	}
+
+// 	function clearText() {
+// 		while (textElement.firstChild) {
+// 			textElement.removeChild(textElement.firstChild);
+// 		}
+// 	}
+
+// 	function startAnimation() {
+// 		clearText();
+// 		typeWord();
+// 		setTimeout(startAnimation, 3000); // Adjust the delay between words
+// 	}
+
+// 	startAnimation();
+// });

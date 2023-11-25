@@ -4,6 +4,12 @@
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Amina</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Monoton&family=Oswald&family=Poppins:wght@300&display=swap"
+			rel="stylesheet"
+		/>
 		<link rel="stylesheet" href="../Bootstrap/bootstrap.css" />
 
 		<link rel="stylesheet" href="../style.css" />
@@ -25,7 +31,7 @@
 				</button>
 				<div class="collapse navbar-collapse" id="navbarScroll">
 					<ul
-						class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll"
+						class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll custom-nav-list"
 						style="--bs-scroll-height: 100px"
 					>
 						<li class="nav-item">
@@ -39,6 +45,9 @@
 						</li>
 						<li class="nav-item">
 							<a class="nav-link" id="contactLink" href="#contact">Contact</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#footer">Address</a>
 						</li>
 						<li class="nav-item">
 							<a class="nav-link" id="previousLink" href="#previous"
@@ -57,12 +66,12 @@
 								Link
 							</a>
 							<ul
-								class="dropdown-menu"
+								class="dropdown-menu links"
 								aria-labelledby="navbarScrollingDropdown"
 							>
 								<li><a class="dropdown-item" href="#">linkedin</a></li>
 								<li><hr class="dropdown-divider" /></li>
-								<li><a class="dropdown-item" href="#">Github</a></li>
+								<li><a class="dropdown-item" href="#">GitHub</a></li>
 							</ul>
 						</li>
 					</ul>
@@ -73,7 +82,7 @@
 		<section class="banner bann" id="home">
 			<div class="container">
 				<h1>Hello, I'm Amina</h1>
-				<p>Front End Developer</p>
+				<p>A Full Stack Developer</p>
 			</div>
 		</section>
 
@@ -81,24 +90,25 @@
 		<section class="aboutSection" id="about">
 			<div class="container">
 				<div class="row">
-					<div class="leftAbout col-md-6">
-						<h5 class="myName">Amina Aliyi</h5>
+					<div class="leftAbout col-md-6 myName">
+						<!-- <h5 class="myName">About Me</h5> -->
 						<div class="profile-pic"></div>
 					</div>
 
-					<div class="rightAbout col-md-6">
-						<h3 class="aboutDescr">Get to know me</h3>
+					<div class="rightAbout col-md-6 ">
+						<!-- <h3 class="aboutDescr">Get to know me</h3> -->
+						<h5 class="aboutDescr">About Me</h5>
 						<p>
-							I am a highly committed junior web developer, driven by a passion
+							I am a highly committed web developer, driven by a passion
 							for delivering top-notch results. My approach is characterized by
 							a meticulous attention to details, With excellent communication
 							skills and a firm belief in the power of teamwork, I contribute
 							effectively to collaborative environments. I'm excited to bring
 							creativity, expertise, and dedication to exceed your expectations.
 						</p>
-						<h4>My Skills</h4>
+						<h5>My Skills</h5>
 						<div class="skill-lists">
-							<ul id="skills" class="col-md-4">
+							<ul id="skills" class="col-md-">
 								<li>JavaScript</li>
 								<li>React</li>
 								<li>Mysql</li>
@@ -108,7 +118,8 @@
 								<li>CSS</li>
 								<li>Bootstrap</li>
 								<li>Express</li>
-								<li>Firebase</li>
+								<li>jQuery</li>
+								<li>GitHub</li>
 							</ul>
 						</div>
 
@@ -132,9 +143,13 @@
 		<section class="previous-w" id="previous">
 			<div class="container">
 				<div class="row">
-					<div><h1>Previous Works</h1></div>
-					<div class="col-md-4 project-box">
-						<!-- img -->
+					<h1>Previous Works</h1>
+					<!-- <div > -->
+					<div class="col-md-6 project-box ">
+						<div class="portfolio-div animated-text" id="text">
+							<span> </span>
+							<!-- <h5>Hello, I'm Amina. A Front End Developer</h5> -->
+						</div>
 						<h4>Personal Website</h4>
 						<p>
 							This personal website contains a resume. I built it using HTML,
@@ -142,37 +157,45 @@
 						</p>
 						<div><button>Live Demo ></button> <button>GitHub ></button></div>
 					</div>
-					<div class="col-md-4 project-box">
+					<div class="col-md-6 project-box m-2">
 						<!-- img -->
 						<h4>Forum Project</h4>
 						<p>
 							This Project is built as a requirement for complishment of my
-							study. I buit using React. it helps as a platform in which
-							developers ask and answer about coding.
+							study. It's  built using React.js, Node.js, Express, and also json webtoken is used for user authentication. it helps as a platform in which
+							developers ask and answer questions about programming.
 						</p>
-						<div><button>Live Demo ></button> <button>GitHub ></button></div>
+						<!-- <div class="icons">
+							<a href="#"><i class="bi bi-github"></i></a>
+						</div> -->
+						<!-- <a href="#"><i class="bi bi-globe2"></i></a> -->
+
+						<div><a href="">Live Demo ></a> <a href="https://github.com/amina-aliyi/Evangadi-Forum" target="_blank">GitHub ></a></div>
 					</div>
-					<div class="col-md-4 project-box">
-						<!-- img -->
+					<div class="col-md-6 project-box m-2">
+					<img id="apple" src="./images/react.jpg" alt="">	
 						<h4>Apple Clone</h4>
 						<p>
 							I built this project as part of the basics of React component
 							re-useability implimentation, it's built with React class based
 							components.
 						</p>
-						<div><button>Live Demo ></button> <button>GitHub ></button></div>
+						<div><a href="https://apple-reactjs-clone1.netlify.app/" target="_blank">Live Demo ></a> <button>GitHub ></button></div>
 					</div>
-					<div class="col-md-4 project-box netflix">
-						<img src="https://image.tmdb.org/t/p/original/wwemzKWzjKYJFfCeiB57q3r4Bcm.png" alt="Netflix-logo">
+					<div class="col-md-6 project-box netflix m-2">
+						<img
+							src="https://image.tmdb.org/t/p/original/wwemzKWzjKYJFfCeiB57q3r4Bcm.png"
+							alt="Netflix-logo"
+						/>
 						<h4>Netflix Clone</h4>
 						<p>
 							I completed this project for the complition of API integration
-							course , built with React functional based components, and Hoks.
+							course , built with React functional based components, and Hooks.
 							And RESt API is used.
 						</p>
-						<div><button>Live Demo ></button> <button>GitHub ></button></div>
+						<div><a href="https://netflix-c-app.netlify.app/" target="_blank">Live Demo ></a> <a href="https://github.com/amina-aliyi/Netflix-clone" target="_blank">GitHub ></a></div>
 					</div>
-					<div class="col-md-4 project-box">
+					<div class="col-md-6 project-box m-2">
 						<div class="slider-container">
 							<div class="slider">
 								<!-- Images will be dynamically added here using JavaScript -->
@@ -184,17 +207,18 @@
 
 						<h4>Amazon Clone</h4>
 						<p>
-							This e-commerce project is completed as a part of compliting the
-							study , connecting every dots needed for an App. As Full Stack
+							This e-commerce project is completed as a part of compliting my
+							study as MERN Developer , connecting every dots needed for an App. As Full Stack
 							Application. and I added some features
 						</p>
-						<div><button>Live Demo ></button> <button>GitHub ></button></div>
+						<div><a href="https://amazon-clone-app1.netlify.app/" target="_blank" >Live Demo ></a> <a href="https://github.com/amina-aliyi/amazon-front-end-c" target="_blank">GitHub ></a></div>
 					</div>
-					<div class="col-md-4 project-box">
+					<div class="col-md-6 project-box m-2">
 						<!-- img -->
 						<h4>Abe Garage</h4>
 						<p id="comming">comming soon</p>
 					</div>
+					<!-- </div> -->
 				</div>
 			</div>
 		</section>
@@ -202,30 +226,30 @@
 		<section class="form-section" id="contact">
 			<div class="container-fluid form-m">
 				<h1>Contact Me</h1>
-				<span>Let's make your project extraordinary!</span>
-				<div class="">
-					<form class="form" action="">
+				<span>Let's digitize your ideas!</span>
+				<div class="digitize">
+					<form class="form" action="https://formsubmit.co/aminatofii@gmail.com" method="POST">
 						<div>
-							<input type="text" placeholder="your name" />
+							<input type="text" name="name" required placeholder="your name" />
 						</div>
 						<br />
 						<div>
-							<input type="text" placeholder="your Email" />
+							<input type="email"  name="email" required placeholder="your Email" />
 						</div>
 						<br />
 						<div>
-							<input type="text" placeholder="subject" />
+							<input type="text"  name="subject" required placeholder="subject" />
 						</div>
 						<br />
 						<div>
-							<textarea placeholder="Message"></textarea>
+							<textarea name="Message" required   placeholder="Message"></textarea>
 						</div>
-						<button>send a message</button>
+						<button type="submit">send a message</button>
 					</form>
 				</div>
 			</div>
 		</section>
-		<footer>
+		<footer id="footer">
 			<div class="container">
 				<div class="dflex row">
 					<div class="footerFirst col-md-6">
